@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600;1,800&display=swap" rel="stylesheet">
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="/index.html"><img src="images\logo.png"> </a>
+                <div class="nav-links" id="navlinks">
+                    <i class="lni lni-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="admission.html">ADMISSION</a></li>
+                        <li><a href="feedback.html">FEEDBACK</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <i class="lni lni-menu" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+
+    </section>
+
+    <!--contact-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1552117010883!2d10.749856180955215!3d59.9129713853183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2sOslo%2C%20Norway!5e0!3m2!1sen!2sin!4v1629424597038!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contus">
+        <div class="row">
+
+            <div class="contus-col">
+
+                <div>
+                    <i class="lni lni-home"></i>
+                    <span>
+                        <h5>ABC University, Oslo Cathedral Road</h5>
+                        <p>Oslo,Norway.</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="lni lni-phone"></i>
+                    <span>
+                        <h5>+47 12345-54321</h5>
+                        <p>Monday to Friday, 10 a.m. to 5 p.m. CET</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="lni lni-envelope"></i>
+                    <span>
+                        <h5>info@abcuni.edu</h5>
+                        <p>Email us for admissions/other queries.</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="contus-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <input type="text" placeholder="Enter Subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="more-btn no-btn">Send Message</button>
+
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h4>Connect with us</h4>
+        <p>Connect with us on social media to stay updated about us.</p>
+
+        <div class="icons">
+            <i class="lni lni-facebook"></i>
+            <i class="lni lni-instagram-original"></i>
+            <i class="lni lni-twitter"></i>
+        </div>
+        <p>Made by Mohit Kumar</p>
+
+    </section>
+<script>
+    var navlinks=document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right= "0";
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

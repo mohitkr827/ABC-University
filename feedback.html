@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600;1,800&display=swap" rel="stylesheet">
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="/index.html"><img src="images\logo.png"> </a>
+                <div class="nav-links" id="navlinks">
+                    <i class="lni lni-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="admission.html">ADMISSION</a></li>
+                        <li><a href="feedback.html">FEEDBACK</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <i class="lni lni-menu" onclick="showMenu()"></i>
+            </nav>
+            <h1>Leave some feedback, or submit a query.</h1>
+
+    </section>
+
+    <!--feedback content-->
+    <section class="feed">
+        <div class="row">
+            <div class="feed-left">
+                <img src="images/feed.jpg">
+                <h2>Feedback/Query form.</h2>
+            </div>
+            <div class="feed-right">
+                <div class="comment">
+                    <h3>Your opinion is valuable to us.</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name.">
+                        <input type="email" placeholder="Enter Email.">
+                        <textarea rows="5" placeholder="Feedback/Query"></textarea>
+                        <button type="submit" class="more-btn no-btn">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+   
+
+    <section class="footer">
+        <h4>Connect with us</h4>
+        <p>Connect with us on social media to stay updated about us.</p>
+
+        <div class="icons">
+            <i class="lni lni-facebook"></i>
+            <i class="lni lni-instagram-original"></i>
+            <i class="lni lni-twitter"></i>
+        </div>
+        <p>Made by Mohit Kumar</p>
+
+    </section>
+<script>
+    var navlinks=document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right= "0";
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
